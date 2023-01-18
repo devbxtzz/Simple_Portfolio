@@ -74,7 +74,7 @@ dfn {
 }
 
 mark {
-    background-color: teal;
+    background-color: #123;
     color: #000;
 }
 
@@ -208,102 +208,6 @@ template {
     display: none
 }
 
-/*!
- *  Font Awesome 4.7.0 by @davegandy - http://fontawesome.io - @fontawesome
- *  License - http://fontawesome.io/license (Font: SIL OFL 1.1, CSS: MIT License)
- */
-@-webkit-keyframes fa-spin {
-    0% {
-        -webkit-transform: rotate(0deg);
-        transform: rotate(0deg)
-    }
-
-    to {
-        -webkit-transform: rotate(359deg);
-        transform: rotate(359deg)
-    }
-}
-
-@keyframes fa-spin {
-    0% {
-        -webkit-transform: rotate(0deg);
-        transform: rotate(0deg)
-    }
-
-    to {
-        -webkit-transform: rotate(359deg);
-        transform: rotate(359deg)
-    }
-}
-
-@-webkit-keyframes pulse {
-
-    0%,
-    to {
-        -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=40)";
-        filter: alpha(opacity=40);
-        opacity: .4;
-        top: 0
-    }
-
-    50% {
-        -ms-filter: none;
-        -webkit-filter: none;
-        filter: none;
-        opacity: 1;
-        top: -10px
-    }
-}
-
-@keyframes pulse {
-
-    0%,
-    to {
-        -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=40)";
-        filter: alpha(opacity=40);
-        opacity: .4;
-        top: 0
-    }
-
-    50% {
-        -ms-filter: none;
-        -webkit-filter: none;
-        filter: none;
-        opacity: 1;
-        top: -10px
-    }
-}
-
-@font-face {
-    font-family: 'FontAwesome';
-    src: url(../fonts/fontawesome-webfont.eot?v=4.7.0);
-    src: url(../fonts/fontawesome-webfont.eot?#iefix&v=4.7.0) format("embedded-opentype"), url(../fonts/fontawesome-webfont.woff2?v=4.7.0) format("woff2"), url(../fonts/fontawesome-webfont.woff?v=4.7.0) format("woff"), url(../fonts/fontawesome-webfont.ttf?v=4.7.0) format("truetype"), url(../fonts/fontawesome-webfont.svg?v=4.7.0#fontawesomeregular) format("svg");
-    font-weight: 400;
-    font-style: normal
-}
-
-
-
-.sr-only {
-    position: absolute;
-    width: 1px;
-    height: 1px;
-    padding: 0;
-    margin: -1px;
-    overflow: hidden;
-    clip: rect(0, 0, 0, 0);
-    border: 0
-}
-
-.sr-only-focusable:active,
-.sr-only-focusable:focus {
-    position: static;
-    width: auto;
-    height: auto;
-    margin: 0;
-    overflow: visible;
-    clip: auto
-}
 
 article,
 aside,
@@ -356,13 +260,7 @@ a img {
 }
 
 #particles-js {
-    background: #1488CC;
-    /* fallback for old browsers */
-    background: -webkit-linear-gradient(to right, #2B32B2, #1488CC);
-    /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to right, #2B32B2, #1488CC);
-    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-
+    background: #012;
     display: flex;
     vertical-align: bottom;
     width: 100%;
@@ -380,7 +278,7 @@ a img {
 .header {
     z-index: 1;
     text-align: center;
-    color: #fff;
+    color: goldenrod;
     position: absolute;
     font-family: 'Rubik', sans-serif;
     width: 80%;
@@ -395,7 +293,7 @@ a img {
     font-size: 35px;
     display: block;
     line-height: 1;
-    color: #fff;
+    color: goldenrod;
 }
 
 @media only screen and (min-width:550px) {
@@ -409,7 +307,7 @@ a img {
     font-size: 20px;
     display: block;
     line-height: 1;
-    color: #fff;
+    color: goldenrod;
     margin-top: 10px
 }
 
@@ -424,7 +322,7 @@ a img {
 }
 
 .header-links .link {
-    color: #fff;
+    color: goldenrod;
     text-decoration: none;
     font-size: 15px;
     margin: 10px
@@ -436,37 +334,37 @@ a img {
     }
 }
 
-.header-icons {
+.hero-icon {
     display: flex;
     justify-content: center;
     text-align: center
 }
 
 .down,
-.header-icons .icon {
-    color: #fff;
+.hero-icon .icon {
+    color: goldenrod;
     text-align: center
 }
 
-.header-icons .icon {
+.hero-icon .icon {
     height: 20px;
     padding: 10px;
     border-radius: 50%;
-    border: 2px solid #fff;
+    border: 2px solid goldenrod;
     transition: all .7s;
     width: 20px;
     font-size: 20px;
     margin: 5px
 }
 
-.header-icons .icon:active,
-.header-icons .icon:hover {
+.hero-icon .icon:active,
+.hero-icon .icon:hover {
     color: #1488CC;
-    background: #fff
+    background: goldenrod
 }
 
 @media only screen and (min-width:550px) {
-    .header-icons .icon {
+    .hero-icon .icon {
         width: 35px;
         height: 35px;
         font-size: 35px
@@ -493,7 +391,7 @@ a img {
     transform: translate(-50%, -50%);
     width: 100px;
     height: 100px;
-    fill: #fff;
+    fill: goldenrod;
     -webkit-animation: pulse 1.3s infinite;
     animation: pulse 1.3s infinite
 }
@@ -632,23 +530,18 @@ a img {
 
 .project-link:active,
 .project-link:hover {
-    background-color: #5347a8;
-    border-color: #5347a8;
-    color: #fff;
+    background-color: #123;
+    border-color: #123;
+    color: goldenrod;
     transition: color .3s ease-in, background-color .3s ease-in, border-color .3s ease-in
 }
 
 .footer {
-    background: #1488CC;
-    /* fallback for old browsers */
-    background: -webkit-linear-gradient(to right, #2B32B2, #1488CC);
-    /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to right, #2B32B2, #1488CC);
-    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background: #012;
     padding: 10px 0;
     margin-top: 100px;
     text-align: center;
-    color: #fff
+    color: goldenrod;
 }
 i
 .footer .love {
@@ -658,5 +551,5 @@ i
 .footer a {
     text-decoration: none;
     margin: 0;
-    color: #fff
+    color: goldenrod
 }
