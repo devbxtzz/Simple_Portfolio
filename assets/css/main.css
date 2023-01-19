@@ -278,7 +278,7 @@ a img {
 .header {
     z-index: 1;
     text-align: center;
-    color: goldenrod;
+    color:whitesmoke;
     position: absolute;
     font-family: 'Rubik', sans-serif;
     width: 80%;
@@ -293,7 +293,7 @@ a img {
     font-size: 35px;
     display: block;
     line-height: 1;
-    color: goldenrod;
+    color:whitesmoke;
 }
 
 @media only screen and (min-width:550px) {
@@ -307,13 +307,13 @@ a img {
     font-size: 20px;
     display: block;
     line-height: 1;
-    color: goldenrod;
+    color: whitesmoke;
     margin-top: 10px
 }
 
 @media only screen and (min-width:550px) {
     .header .site-description {
-        font-size: 40px
+        font-size: 35px
     }
 }
 
@@ -322,7 +322,7 @@ a img {
 }
 
 .header-links .link {
-    color: goldenrod;
+    color:whitesmoke;
     text-decoration: none;
     font-size: 15px;
     margin: 10px
@@ -334,41 +334,65 @@ a img {
     }
 }
 
-.hero-icon {
+.hero-icons {
     display: flex;
     justify-content: center;
     text-align: center
 }
 
 .down,
-.hero-icon .icon {
-    color: goldenrod;
+.hero-icons .icon {
+    color:whitesmoke;
     text-align: center
 }
 
-.hero-icon .icon {
+.hero-icons .icon {
     height: 20px;
     padding: 10px;
     border-radius: 50%;
-    border: 2px solid goldenrod;
+    border: 2px solidwhitesmoke;
     transition: all .7s;
     width: 20px;
     font-size: 20px;
     margin: 5px
 }
 
-.hero-icon .icon:active,
-.hero-icon .icon:hover {
+.hero-icons .icon:active,
+.hero-icons .icon:hover {
     color: #1488CC;
-    background: goldenrod
+    background:whitesmoke
 }
 
 @media only screen and (min-width:550px) {
-    .hero-icon .icon {
+    .hero-icons .icon {
         width: 35px;
         height: 35px;
         font-size: 35px
     }
+}
+
+
+.social-link {
+    display: inline-block;
+    margin: 10px;
+    padding: 5px;
+    color: whitesmoke;
+    background-color: transparent;
+    border: 1px solid  whitesmoke;
+    border-radius: 10px;
+    text-align: center;
+    outline: 0;
+    text-decoration: none;
+    cursor: pointer;
+    transition: color .3s ease-out, background-color .3s ease-out, border-color .3s ease-out
+}
+
+.social-link:active,
+.social-link:hover {
+    background-color: #012;
+    border-color: #012;
+    color: teal;
+    transition: color .3s ease-in, background-color .3s ease-in, border-color .3s ease-in
 }
 
 .down {
@@ -391,7 +415,7 @@ a img {
     transform: translate(-50%, -50%);
     width: 100px;
     height: 100px;
-    fill: goldenrod;
+    fill:whitesmoke;
     -webkit-animation: pulse 1.3s infinite;
     animation: pulse 1.3s infinite
 }
@@ -400,7 +424,7 @@ a img {
 .down .icon:hover,
 .footer a:active,
 .footer a:hover {
-    color: #4b5664
+    color: teal;
 }
 
 #about {
@@ -515,11 +539,11 @@ a img {
 
 .project-link {
     display: inline-block;
-    margin: 10px 0;
+    margin: 10px;
     padding: 5px;
-    color: #1488CC;
+    color: teal;
     background-color: transparent;
-    border: 1px solid #1488CC;
+    border: 1px solid  teal;
     border-radius: 10px;
     text-align: center;
     outline: 0;
@@ -532,7 +556,7 @@ a img {
 .project-link:hover {
     background-color: #123;
     border-color: #123;
-    color: goldenrod;
+    color:whitesmoke;
     transition: color .3s ease-in, background-color .3s ease-in, border-color .3s ease-in
 }
 
@@ -541,7 +565,7 @@ a img {
     padding: 10px 0;
     margin-top: 100px;
     text-align: center;
-    color: goldenrod;
+    color:whitesmoke;
 }
 i
 .footer .love {
@@ -551,5 +575,5 @@ i
 .footer a {
     text-decoration: none;
     margin: 0;
-    color: goldenrod
+    color:whitesmoke
 }
