@@ -395,6 +395,15 @@ a img {
     transition: color .3s ease-in, background-color .3s ease-in, border-color .3s ease-in
 }
 
+.social-link:hover img{
+    animation: moveUp 1s ease-in-out infinite;
+  }
+  
+  @keyframes moveUp{
+    from{ transform:translateY(0);}
+    to {transform:translateY(5px);}
+  }
+
 .down {
     position: absolute;
     bottom: 25px;
@@ -405,27 +414,14 @@ a img {
     cursor: pointer
 }
 
-.down .icon {
-    position: absolute;
-    -webkit-transform-style: preserve-3d;
-    transform-style: preserve-3d;
-    top: 50%;
-    left: 50%;
-    -webkit-transform: translate(-50%, -50%);
-    transform: translate(-50%, -50%);
-    width: 100px;
-    height: 100px;
-    fill:goldenrod;
-    -webkit-animation: pulse 1.3s infinite;
-    animation: pulse 1.3s infinite
-}
-
-.down .icon:active,
-.down .icon:hover,
-.footer a:active,
-.footer a:hover {
-    color: teal;
-}
+.scroll:hover img{
+    animation: moveUp 0.8s ease-in-out infinite;
+  }
+  
+  @keyframes moveUp{
+    from{ transform:translateY(2px);}
+    to {transform:translateY(-18px);}
+  }
 
 #about {
     width: 90%;
